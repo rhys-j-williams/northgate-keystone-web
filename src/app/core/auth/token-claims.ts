@@ -17,7 +17,7 @@ export interface KeystoneClaims {
   auth_time?: number;
 }
 
-export const ACR_LOA2 = 'urn:meridian:keystone:loa2';
+export const ACR_LOA2 = 'urn:northgate:keystone:loa2';
 
 export function toClaims(raw: Record<string, unknown> | null | undefined): KeystoneClaims | null {
   if (!raw || typeof raw['sub'] !== 'string') {

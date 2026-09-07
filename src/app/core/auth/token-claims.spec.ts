@@ -11,7 +11,7 @@ describe('toClaims', () => {
       sub: 'cust-0001',
       preferred_username: 'p.fixture',
       amr: ['pwd', 'otp', 42],
-      acr: 'urn:meridian:keystone:loa2',
+      acr: 'urn:northgate:keystone:loa2',
       auth_time: 1700000000,
       something_else: 'ignored',
     });

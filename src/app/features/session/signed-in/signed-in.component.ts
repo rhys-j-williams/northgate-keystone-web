@@ -19,8 +19,8 @@ import { AuthSessionService } from '../../../core/auth/auth-session.service';
       <p class="ks-card__lede" *ngIf="claims$ | async as c">Welcome back{{ c.given_name ? ', ' + c.given_name : '' }}.</p>
       <p>Choose where to go:</p>
       <div class="ks-actions">
-        <a mat-flat-button color="primary" href="https://www.meridiantrust.example/online-banking">Personal banking</a>
-        <a mat-stroked-button href="https://business.meridiantrust.example">Business banking</a>
+        <a mat-flat-button color="primary" href="https://www.northgatetrust.example/online-banking">Personal banking</a>
+        <a mat-stroked-button href="https://business.northgatetrust.example">Business banking</a>
         <button mat-button type="button" (click)="signOut()">Sign out</button>
       </div>
     </section>

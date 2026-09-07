@@ -90,7 +90,7 @@ export class AuthSessionService {
   }
 }
 
-const CALLBACK_HOSTS = ['localhost:4202', 'login.meridiantrust.example', 'login-uat.meridiantrust.example', 'www.meridiantrust.example', 'business.meridiantrust.example', 'localhost:4200', 'localhost:4201'];
+const CALLBACK_HOSTS = ['localhost:4202', 'login.northgatetrust.example', 'login-uat.northgatetrust.example', 'www.northgatetrust.example', 'business.northgatetrust.example', 'localhost:4200', 'localhost:4201'];
 
 export function isRegisteredCallback(url: string): boolean {
   try {

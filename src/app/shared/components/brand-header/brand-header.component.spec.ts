@@ -14,7 +14,7 @@ describe('BrandHeaderComponent', () => {
 
   it('names the bank and shows the secure badge by default', () => {
     const el: HTMLElement = fixture.nativeElement;
-    expect(el.textContent).toContain('Meridian Trust Bank');
+    expect(el.textContent).toContain('Northgate Trust Bank');
     expect(el.querySelector('.ks-brand__secure')).not.toBeNull();
   });
 

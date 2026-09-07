@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { CnIconRegistry } from '@meridian/canopy-ui/icons';
+import { CnIconRegistry } from '@northgate/canopy-ui/icons';
 
 @Component({
   selector: 'ks-root',

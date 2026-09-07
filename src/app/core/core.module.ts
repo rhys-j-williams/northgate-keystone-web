@@ -1,8 +1,8 @@
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { APP_INITIALIZER, NgModule, Optional, SkipSelf } from '@angular/core';
 import { OAuthModule } from 'angular-oauth2-oidc';
-import { CnIconModule } from '@meridian/canopy-ui/icons';
-import { CnToastModule } from '@meridian/canopy-ui/overlays';
+import { CnIconModule } from '@northgate/canopy-ui/icons';
+import { CnToastModule } from '@northgate/canopy-ui/overlays';
 
 import { environment } from '../../environments/environment';
 import { AuthSessionService } from './auth/auth-session.service';

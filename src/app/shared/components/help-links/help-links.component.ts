@@ -10,8 +10,8 @@ import { NgIf } from '@angular/common';
   template: `
     <nav class="ks-help" aria-label="Help">
       <a *ngIf="showRecovery" class="ks-link" routerLink="/recovery">Forgot your username?</a>
-      <a class="ks-link" href="https://www.meridiantrust.example/help/signing-in" rel="noopener">Trouble signing in</a>
-      <a *ngIf="showEnrol" class="ks-link" href="https://www.meridiantrust.example/enroll" rel="noopener">Enroll in online banking</a>
+      <a class="ks-link" href="https://www.northgatetrust.example/help/signing-in" rel="noopener">Trouble signing in</a>
+      <a *ngIf="showEnrol" class="ks-link" href="https://www.northgatetrust.example/enroll" rel="noopener">Enroll in online banking</a>
     </nav>
   `,
   styles: [`.ks-help { display: flex; flex-wrap: wrap; gap: 12px 20px; justify-content: center; margin-top: 24px; font-size: 14px; }`],

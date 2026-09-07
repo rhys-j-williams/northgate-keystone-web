@@ -10,11 +10,11 @@ environments in one array; moving it into `environment*.ts` is KEY-2288 and has 
 Adding an origin:
 
 1. Ticket in KEY, linked to the calling application's ticket. GIS approve the origin (they check it
-   is a Meridian-controlled host on the WAF). Usually two days.
+   is a Northgate-controlled host on the WAF). Usually two days.
 2. Add to `allowedReturnOrigins`. Exact origin, scheme included, no path, no wildcard. Localhost
    ports are permitted over http, everything else must be https (the service enforces this).
 3. Add a case to `step-up.service.spec.ts`. The spec that asserts an open redirect is rejected is
-   GIS-1180's regression test; if you touch it, tag `@meridian/gis-appsec` on the review.
+   GIS-1180's regression test; if you touch it, tag `@northgate/gis-appsec` on the review.
 
 History: the original implementation (2021) accepted any `https:` URL. Pen test finding
 GIS-PT-2021-07 item 4, fixed in KEY-0902. Do not go back to that.

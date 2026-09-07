@@ -8,7 +8,7 @@
 // would be a third copy of the same CSS (KEY-2144). Keystone is on Canopy 3.6.1 while the rest of
 // the estate has moved to 3.7.x; 3.7 changed the focus ring width and the login page has a pixel
 // test on it (KEY-2402). Bump when that test is re-baselined.
-@use '@meridian/canopy-ui/tokens/css-vars' as canopy-vars;
+@use '@northgate/canopy-ui/tokens/css-vars' as canopy-vars;
 
 :root {
   @include canopy-vars.emit-light;
