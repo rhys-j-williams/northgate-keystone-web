@@ -32,4 +32,4 @@ Things that go wrong:
 - **Rate limit banner appears immediately**: the mock counts failures per username across
   restarts of *your* browser but not of itself. Restart the mock.
 - **`Error retrieving icon cn:...` in the console**: the Canopy sprite did not copy. Check the
-  `assets` glob in `angular.json` and that `@meridian/canopy-ui` actually installed from 4873.
+  `assets` glob in `angular.json` and that `@northgate/canopy-ui` actually installed from 4873.

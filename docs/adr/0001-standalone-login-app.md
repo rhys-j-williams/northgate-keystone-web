@@ -12,7 +12,7 @@ channel should integrate with it directly or whether the login UI should be cent
 
 ## Decision
 
-One Angular application at `login.meridiantrust.example` owned by identity-platform. Channels
+One Angular application at `login.northgatetrust.example` owned by identity-platform. Channels
 redirect to it with a standard authorization request and receive a code back. It talks to the IdP
 mock/real IdP over its form endpoints for the interactive steps (credentials, MFA, recovery) and
 to the retail BFF for device trust, which needs the customer profile.

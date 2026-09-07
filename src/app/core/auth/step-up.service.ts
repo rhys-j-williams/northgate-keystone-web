@@ -16,9 +16,9 @@ export class StepUpService {
     'http://localhost:4201', // business-web
     'http://localhost:4203', // ledgerline
     'http://localhost:4210', // wealth portal (SAML side, but it links here for recovery)
-    'https://online.meridiantrust.example',
-    'https://business.meridiantrust.example',
-    'https://ledgerline.meridiantrust.example',
+    'https://online.northgatetrust.example',
+    'https://business.northgatetrust.example',
+    'https://ledgerline.northgatetrust.example',
   ];
 
   readonly reasons: Record<string, string> = {

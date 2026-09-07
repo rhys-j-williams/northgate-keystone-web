@@ -23,4 +23,4 @@ no specs lowers the percentage. Write a spec. Do not lower the number. Do not ad
 `/* istanbul ignore */`; Sonar counts it separately and GIS look at that count.
 
 Reports: `coverage/keystone-web/index.html` locally, `reports/junit/` for Jenkins, Sonar project
-`meridian:keystone-web`.
+`northgate:keystone-web`.

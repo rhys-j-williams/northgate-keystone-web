@@ -30,7 +30,7 @@ export class ChannelPickerComponent {
   readonly options: ChannelOption[] = [
     { channel: 'sms', label: 'Text message', hint: 'To your mobile number on file', icon: 'cn:help', route: '/mfa' },
     { channel: 'email', label: 'Email', hint: 'To your email address on file', icon: 'cn:document', route: '/mfa' },
-    { channel: 'push', label: 'Meridian app', hint: 'Approve in the mobile banking app', icon: 'cn:bell', route: '/mfa/push' },
+    { channel: 'push', label: 'Northgate app', hint: 'Approve in the mobile banking app', icon: 'cn:bell', route: '/mfa/push' },
     { channel: 'totp', label: 'Authenticator app', hint: 'Use the 6 digit code from your app', icon: 'cn:lock', route: '/mfa/authenticator' },
   ];
 

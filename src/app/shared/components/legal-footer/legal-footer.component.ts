@@ -7,12 +7,12 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   template: `
     <footer class="ks-footer" role="contentinfo">
       <nav aria-label="Legal">
-        <a class="ks-link" href="https://www.meridiantrust.example/privacy" rel="noopener">Privacy</a>
-        <a class="ks-link" href="https://www.meridiantrust.example/security" rel="noopener">Security</a>
-        <a class="ks-link" href="https://www.meridiantrust.example/accessibility" rel="noopener">Accessibility</a>
+        <a class="ks-link" href="https://www.northgatetrust.example/privacy" rel="noopener">Privacy</a>
+        <a class="ks-link" href="https://www.northgatetrust.example/security" rel="noopener">Security</a>
+        <a class="ks-link" href="https://www.northgatetrust.example/accessibility" rel="noopener">Accessibility</a>
       </nav>
       <p class="ks-footer__legal">
-        Meridian Trust Bank, N.A. Member FDIC. Equal Housing Lender. &copy; {{ year }}
+        Northgate Trust Bank, N.A. Member FDIC. Equal Housing Lender. &copy; {{ year }}
       </p>
       <p class="ks-footer__build" aria-hidden="true">{{ build }}</p>
     </footer>

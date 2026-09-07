@@ -1,10 +1,10 @@
 // keystone-web. Shared library: platform-tooling/jenkins-shared-library.
 // This pipeline deploys the login page for every channel. Deploys to prod are CAB-gated in the
-// library (meridianNodePipeline reads the CHG number from the tag annotation); do not add a
+// library (northgateNodePipeline reads the CHG number from the tag annotation); do not add a
 // manual approval stage here, it was removed in TOOL-0412 because it double-prompted.
-@Library('meridian-pipeline@v3') _
+@Library('northgate-pipeline@v3') _
 
-meridianNodePipeline(
+northgateNodePipeline(
   agentLabel: 'nodejs16-rhel8',
   nodeVersion: '16.20.2',
   jiraProject: 'KEY',
@@ -25,7 +25,7 @@ meridianNodePipeline(
     minimumLines: 38
   ],
   sonar: [
-    projectKey: 'meridian:keystone-web',
+    projectKey: 'northgate:keystone-web',
     propertiesFile: 'sonar-project.properties'
   ],
   checkmarx: [

@@ -4,10 +4,10 @@ describe('StepUpService', () => {
   const svc = new StepUpService();
 
   it('allows the known first party origins only', () => {
-    expect(svc.isAllowedReturn('https://online.meridiantrust.example/payments/new')).toBeTrue();
+    expect(svc.isAllowedReturn('https://online.northgatetrust.example/payments/new')).toBeTrue();
     expect(svc.isAllowedReturn('http://localhost:4200/help')).toBeTrue();
-    expect(svc.isAllowedReturn('https://online.meridiantrust.example.evil.example/')).toBeFalse();
-    expect(svc.isAllowedReturn('http://online.meridiantrust.example/')).toBeFalse();
+    expect(svc.isAllowedReturn('https://online.northgatetrust.example.evil.example/')).toBeFalse();
+    expect(svc.isAllowedReturn('http://online.northgatetrust.example/')).toBeFalse();
     expect(svc.isAllowedReturn('javascript:alert(1)')).toBeFalse();
     expect(svc.isAllowedReturn(null)).toBeFalse();
   });

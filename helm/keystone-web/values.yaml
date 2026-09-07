@@ -4,7 +4,7 @@
 replicaCount: 1
 
 image:
-  repository: registry.meridian.internal/cswt/keystone-web
+  repository: registry.northgate.internal/cswt/keystone-web
   tag: "2024.11.1"
   pullPolicy: IfNotPresent
 
@@ -12,14 +12,14 @@ service:
   port: 8080
 
 route:
-  host: login-sandbox.apps.idp-sandbox.meridian.internal
+  host: login-sandbox.apps.idp-sandbox.northgate.internal
   tls: edge
 
 # Becomes connect-src in the CSP header. Issuer and BFF only. Do not add telemetry hosts here;
 # telemetry goes through the BFF (PRV-0119).
 cspConnectSrc:
-  - https://keystone-sandbox.apps.idp-sandbox.meridian.internal
-  - https://bff-retail-sandbox.apps.idp-sandbox.meridian.internal
+  - https://keystone-sandbox.apps.idp-sandbox.northgate.internal
+  - https://bff-retail-sandbox.apps.idp-sandbox.northgate.internal
 
 resources:
   requests:

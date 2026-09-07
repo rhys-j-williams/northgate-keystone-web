@@ -36,7 +36,7 @@
               "src/assets",
               {
                 "glob": "canopy-sprite.svg",
-                "input": "node_modules/@meridian/canopy-ui/icons",
+                "input": "node_modules/@northgate/canopy-ui/icons",
                 "output": "assets/canopy"
               }
             ],
