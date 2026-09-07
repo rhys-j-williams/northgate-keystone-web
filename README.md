@@ -1,15 +1,15 @@
 # keystone-web
 
-Login, MFA, device trust, step-up and account recovery for every Meridian digital channel. Served
-at `login.meridiantrust.example`. This is the relying-party UI in front of the Keystone identity
+Login, MFA, device trust, step-up and account recovery for every Northgate digital channel. Served
+at `login.northgatetrust.example`. This is the relying-party UI in front of the Keystone identity
 provider; it does not issue tokens, it does not validate them, and it does not know who you are
 after the redirect. Retail, Business, Ledgerline and the contact centre desktop all bounce through
 here, which is why a bad deploy of this thing is a P1 for the whole bank (INC0142270, March 2023,
 do not ask).
 
-Owner: `@meridian/identity-platform` (Chester). On-call rota `IDP-WEB` in the paging tool; the
+Owner: `@northgate/identity-platform` (Chester). On-call rota `IDP-WEB` in the paging tool; the
 pager is shared with the Keystone IdP team, so say "front end" in the first sentence. Security
-review: `@meridian/gis-appsec` for anything under `src/app/core/auth`, `src/app/core/device`,
+review: `@northgate/gis-appsec` for anything under `src/app/core/auth`, `src/app/core/device`,
 `src/index.html` (CSP) and the pipeline files — see CODEOWNERS.
 
 ## Versions
@@ -22,7 +22,7 @@ review: `@meridian/gis-appsec` for anything under `src/app/core/auth`, `src/app/
 | RxJS | 7.8.0 |
 | zone.js | 0.12.0 |
 | angular-oauth2-oidc | 15.0.1 |
-| @meridian/canopy-ui | 3.6.1 |
+| @northgate/canopy-ui | 3.6.1 |
 | Node | 16.20.2 (`.nvmrc`) |
 
 Do not bump anything without reading `docs/adr/0003-material-15-mdc-migration.md` first. The
@@ -80,10 +80,10 @@ we post to it. Read `docs/runbooks/local-login-flow.md`; the sequence is not obv
 issues a 303 that XHR follows silently.
 
 Test users are in `mock-external/keystone-idp-mock/src/users.ts`. The fixed OTP is in the same
-directory. `@meridian/domain-fixtures` supplies everything else; do not add users of your own.
+directory. `@northgate/domain-fixtures` supplies everything else; do not add users of your own.
 
-Registry: `.npmrc` points `@meridian` at the local Verdaccio on 4873. Publish Canopy first with
-`scripts/publish-local-versions.sh` in the meridian-canopy-ui checkout or `npm ci` will fail on `@meridian/canopy-ui@3.6.1`.
+Registry: `.npmrc` points `@northgate` at the local Verdaccio on 4873. Publish Canopy first with
+`scripts/publish-local-versions.sh` in the northgate-canopy-ui checkout or `npm ci` will fail on `@northgate/canopy-ui@3.6.1`.
 
 ## Scripts
 
@@ -141,7 +141,7 @@ higher.
 ## Known issues
 
 - `feature/KEY-2210-mdc-migration` does not build. See above.
-- `@meridian/canopy-ui` 3.6.1's README says to `@use '@meridian/canopy-ui/styles'`. That path does
+- `@northgate/canopy-ui` 3.6.1's README says to `@use '@northgate/canopy-ui/styles'`. That path does
   not exist in the 3.6.1 tarball (CNPY-2203, fixed in 3.7). We `@use` `tokens/css-vars` directly,
   which needs `node_modules` in `stylePreprocessorOptions.includePaths`. Do not remove that.
 - Push approval polls every 2 seconds for 90 seconds. The IdP team keep promising SSE (KEY-1920).

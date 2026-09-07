@@ -1,7 +1,7 @@
 {
-  "name": "@meridian/keystone-web",
+  "name": "@northgate/keystone-web",
   "version": "4.11.3",
-  "description": "Keystone login, MFA, device trust and step-up front end. Relying party UI for the Keystone IdP. Served at login.meridiantrust.example.",
+  "description": "Keystone login, MFA, device trust and step-up front end. Relying party UI for the Keystone IdP. Served at login.northgatetrust.example.",
   "private": true,
   "license": "UNLICENSED",
   "engines": {
@@ -32,7 +32,7 @@
     "@angular/platform-browser": "15.2.10",
     "@angular/platform-browser-dynamic": "15.2.10",
     "@angular/router": "15.2.10",
-    "@meridian/canopy-ui": "3.6.1",
+    "@northgate/canopy-ui": "3.6.1",
     "angular-oauth2-oidc": "15.0.1",
     "rxjs": "7.8.0",
     "tslib": "2.5.0",
@@ -47,7 +47,7 @@
     "@angular-eslint/template-parser": "15.2.1",
     "@angular/cli": "15.2.10",
     "@angular/compiler-cli": "15.2.10",
-    "@meridian/domain-fixtures": "1.6.0",
+    "@northgate/domain-fixtures": "1.6.0",
     "@types/jasmine": "4.3.1",
     "@types/node": "16.18.11",
     "@typescript-eslint/eslint-plugin": "5.48.2",

@@ -9,5 +9,5 @@ maintainers:
   - name: identity-platform
     email: identity-platform@example.com
 annotations:
-  meridian.bank/ticket-key: KEY
-  meridian.bank/superseded-by: platform-tooling/helm/keystone-web
+  northgate.bank/ticket-key: KEY
+  northgate.bank/superseded-by: platform-tooling/helm/keystone-web
